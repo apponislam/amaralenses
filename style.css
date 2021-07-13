@@ -796,6 +796,14 @@ a.arby {
 
 
 @media (max-width:1366px) {
+    
+    .lens2 p {
+    font-family: bebasneue;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
     .popularstep h1 {
         color: white;
