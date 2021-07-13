@@ -1,0 +1,2326 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*---------- Fonts ---------*/
+
+@font-face {
+    font-family: bebas;
+    src: url(fonts/bebas/BEBAS.TTF);
+}
+
+@font-face {
+    font-family: gilroy-regular;
+    src: url(fonts/Gilroy/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: gilroy-bold;
+    src: url(fonts/Gilroy/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family: gilroy-medium;
+    src: url(fonts/Gilroy/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: bebasneue;
+    src: url(fonts/bebas/BebasNeue.otf);
+}
+
+@font-face {
+    font-family: bebasneueregular;
+    src: url(fonts/bebas/BebasNeueRegular.otf);
+}
+
+@font-face {
+    font-family: BebasNeueBold;
+    src: url(fonts/bebas/BebasNeueBold.otf);
+}
+
+/* ----------header area----------------- */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.header {
+    background: url(img/heroback.png) no-repeat fixed;
+    height: 683px;
+    background-size: auto;
+}
+
+.nr31w {
+    font: var(--fnt, var(--font_5));
+    transition: var(--trans2, color .4s ease 0s);
+    color: var(--corvid-color, rgb(var(--txt, var(--color_15))));
+    position: relative;
+    white-space: nowrap;
+    margin: 0;
+}
+
+li.active {
+    padding-top: 11px;
+}
+
+.navbar {
+    padding: 20px 40px;
+}
+
+.active:hover {
+    background-color: #F6881F;
+}
+
+.signin:hover {
+    color: white;
+}
+
+/* .englan:hover {
+    background-color: #C89720;
+}
+
+.arby:hover {
+    background-color: #2DAAE1;
+} */
+
+.navbar img {
+    height: 79px;
+    width: 180px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    font-size: 20px;
+    font-family: bebas;
+    color: black;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-family: bebas;
+}
+
+.navbar ul li b {
+    font-size: 20px;
+}
+
+.active {
+    background-color: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+}
+
+.active2 {
+    display: none;
+}
+
+.active a {
+    color: #00ADEF;
+    font-size: 20px;
+}
+
+.nav2 {
+    padding: 5px 10px 5px 15px;
+}
+
+.nav2 a {
+    color: white;
+    font-size: 20px;
+}
+
+.nav2 b {
+    color: white;
+    padding: 0 15px 0 15px;
+}
+
+a.arby {
+    font-size: 27px;
+}
+
+
+.headertxt {
+    padding-top: 200px;
+}
+
+.headertxt h1 {
+    color: white;
+    font-family: bebas;
+    font-size: 60px;
+    text-align: center;
+}
+
+.headertxt p {
+    color: #00ADEF;
+    font-family: gilroy-regular;
+    font-size: 29px;
+    text-align: center;
+}
+
+/* --------colum section ---------*/
+
+.colsec {
+    height: 175px;
+}
+
+.colsec1 {
+    background-color: #004B87;
+}
+
+.colsec1 p {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-family: gilroy-bold;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.iconSize {
+    display: flex;
+    font-size: 3vw;
+    padding-top: 22px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+.colsec2 {
+    background-color: #01ABEC;
+}
+
+.colsec2 p {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-family: gilroy-bold;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.colsec3 {
+    background-color: #F2C64C;
+}
+
+.colsec3 p {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-family: gilroy-bold;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+/*--------------- Brand Story -------------*/
+
+.brands {
+    height: 500px;
+}
+
+.brands h1 {
+    font-size: 60px;
+    font-family: bebas;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.brands p {
+    font-size: 29px;
+    font-family: gilroy-medium;
+    color: #8E8D8D;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+.brands button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 35px;
+}
+
+.brands button a {
+    font-size: 27px;
+    font-family: gilroy-medium;
+    text-align: center;
+    border-radius: 35px;
+    padding: 3px 20px;
+    background-color: #004B87;
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    display: block;
+}
+
+
+/* ---------Popular Season ------------*/
+
+.popular {
+    background: url(img/popularseason.png) no-repeat;
+    height: 428px;
+}
+
+.container.populars {
+    display: flex;
+}
+
+.populartxt {
+    padding: 120px 0 0 100px;
+}
+
+.populartxt h1 {
+    font-size: 54px;
+    font-family: bebas;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.populartxt p {
+    font-size: 20px;
+    font-family: gilroy-regular;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.populartxt a {
+    font-size: 27px;
+    font-family: gilroy-regular;
+    text-align: center;
+    border-radius: 35px;
+    padding: 3px 40px;
+    border: white 2px solid;
+    text-decoration: none;
+    color: white;
+}
+
+.populargirl {
+    padding: 50px 0 0 150px;
+}
+
+
+/*-------------- Lenses Area ----------*/
+
+.lens2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.lens2 img {
+    text-align: center;
+}
+
+.lens2 p {
+    font-family: bebasneue;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*-------------- lens details -------------*/
+
+.lensdetails {
+    height: 450px;
+}
+
+.iconSize2 {
+    display: flex;
+    font-size: 4vw;
+    padding-top: 54px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+.lensdetails h5 {
+    font-family: gilroy-bold;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.lensdetails p {
+    font-family: gilroy-regular;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.lensdetails1 {
+    background-color: #004B87;
+}
+
+.lensdetails2 {
+    background-color: #01ABEC;
+}
+
+.lensdetails3 {
+    background-color: #F2C64C;
+}
+
+/*---------- lens details more ------------*/
+
+.lensbtn {
+    display: flex;
+    justify-content: center;
+}
+
+.lensbtn button {
+    display: block;
+    border-radius: 7px;
+    margin: 80px 0 80px 0;
+    border: none;
+}
+
+.lensbtn button a {
+    font-size: 27px;
+    font-family: gilroy-regular;
+    text-align: center;
+    border-radius: 7px;
+    padding: 0px 150px;
+    background-color: #F2C64C;
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    display: block;
+}
+
+/*------------- journey area ----------------*/
+
+.journeyarea {
+    background: url(img/journeyarea.png) no-repeat;
+    height: 426px;
+}
+
+.journey1 h2 {
+    font-family: bebasneueregular;
+    font-size: 40px;
+    color: white;
+}
+
+.journeyhead1 {
+    padding-top: 100px;
+}
+
+.journeyhead2 {
+    padding-top: 30px;
+}
+
+.journey2 ul li {
+    font-family: gilroy-regular;
+    font-size: 25px;
+    color: white;
+}
+
+.journeylist1 {
+    padding-top: 100px;
+}
+
+.journeylist2 {
+    padding-top: 25px;
+}
+
+/*---------------- company area ------------------*/
+
+.logoarea {
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.logoarea img {
+    margin: 0 70px 0 0;
+}
+
+.logoarea ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.companytxt {
+    display: flex;
+    justify-content: space-around;
+}
+
+.comp_brand {
+
+
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.comp_brand img {
+    width: 100%;
+}
+
+.companydetails p {
+    font-style: gilroy-regular;
+    font-size: 25px;
+    text-align: center;
+}
+
+.companyborder {
+    padding: 0px 20px;
+    border-left: black 2px solid;
+    border-right: black 2px solid;
+}
+
+
+
+.companybtn {
+    display: flex;
+    justify-content: center;
+}
+
+.companybtn button {
+    display: block;
+    border-radius: 7px;
+    margin: 80px 0 120px 0;
+    border: none;
+}
+
+.companybtn button a {
+    font-size: 27px;
+    font-family: gilroy-regular;
+    text-align: center;
+    border-radius: 7px;
+    padding: 0px 150px;
+    background-color: #F2C64C;
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    display: block;
+}
+
+
+/*---------------- popular season steps ----------------*/
+
+.popularstep {
+    background: url(img/popularstep.png) no-repeat fixed;
+    background-size: auto 100%;
+}
+
+.popularstep h1 {
+    color: white;
+    text-align: center;
+    font-size: 69px;
+    font-family: bebasneueregular;
+    padding: 80px 0 60px 0;
+}
+
+.popularsteps h2 {
+    color: white;
+    font-size: 50px;
+    font-family: bebasneueregular;
+}
+
+.popularsteps p span {
+    color: #FBDE25;
+}
+
+.popularsteps p {
+    font-family: gilroy-regular;
+    font-size: 30px;
+    color: white;
+    margin-right: 100px;
+    border-bottom: #FBDE25 5px solid;
+}
+
+
+
+.popularstepbtn {
+    display: flex;
+    justify-content: center;
+}
+
+.popularstepbtn button {
+    display: block;
+    border-radius: 7px;
+    margin: 80px 0 100px 0;
+    background: none;
+    border: none;
+    border: #707070 2px solid;
+}
+
+.popularstepbtn button:hover {
+    background-color: #F6881F;
+}
+
+.popularstepbtn button a {
+    font-size: 27px;
+    font-family: gilroy-regular;
+    text-align: center;
+    border-radius: 7px;
+    padding: 0px 150px;
+    background: none;
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    display: block;
+}
+
+/*----------------- Dream of passion ------------------*/
+
+.dreampassion {
+    padding: 100px 0;
+}
+
+.dreampassion h1 {
+    font-size: 55px;
+    font-family: BebasNeueBold;
+}
+
+.dreampassion h3 {
+    font-size: 35px;
+    font-family: gilroy-regular;
+    color: #FBDE25;
+}
+
+.dreampassion p {
+    font-size: 30px;
+    font-family: gilroy-regular;
+}
+
+/* -popular season -collect from up -same- */
+
+
+/*---------------- Form Area ----------------*/
+
+.formarea {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.mainform {
+    padding-right: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-right: black 2px solid;
+}
+
+.formarea h1 {
+    font-size: 50px;
+    font-family: gilroy-medium;
+}
+
+.formarea h4 {
+    font-size: 35px;
+    font-family: gilroy-medium;
+    color: #FBDE25;
+}
+
+.formarea label {
+    font-size: 25px;
+    font-family: gilroy-medium;
+    padding: 10px 0 10px 4px;
+}
+
+.formarea input {
+    font-size: 30px;
+    width: 100%;
+    padding-left: 10px;
+    height: 50px;
+    border: #8E8D8D 3px solid;
+    border-radius: 8px;
+}
+
+.mainform button {
+    padding: 10px;
+    margin-top: 25px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: #FBDE25;
+}
+
+.mainform button a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: gilroy-bold;
+    color: white;
+}
+
+.formrules {
+    padding: 40px 0 40px 80px;
+}
+
+.formrules ul li {
+    font-size: 20px;
+    font-family: gilroy-medium;
+    padding: 10px 0 10px 4px;
+}
+
+.formrules p {
+    font-size: 20px;
+    font-family: gilroy-medium;
+    padding: 10px 0 10px 4px;
+}
+
+/*---------- delivery details -------*/
+
+.delivery {
+    padding-bottom: 80px;
+}
+
+.deliveryicon {
+    display: flex;
+    margin-bottom: -10px;
+}
+
+.deliveryicon img {
+    height: 23px;
+    width: 29px;
+    padding-right: 10px;
+}
+
+.deliveryicon p {
+    font-size: 20px;
+    font-family: gilroy-bold;
+    color: #01ABEC;
+    padding-top: -2px;
+}
+
+.delivery h5 {
+    font-size: 20px;
+    color: #B2B2B2;
+    font-family: gilroy-regular;
+}
+
+/*---------- Footer -----------*/
+
+.footer {
+    padding: 60px 200px 100px 200px;
+}
+
+.footer h4 {
+    font-family: gilroy-bold;
+    font-size: 27px;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 20px;
+}
+
+.footer ul li {
+    font-size: 24px;
+    color: #B2B2B2;
+    padding: 7px 0 7px 0;
+}
+
+
+.footer ul li a {
+    text-decoration: none;
+    color: #B2B2B2;
+    padding: 10px 0 10px 0;
+    font-family: gilroy-regular;
+}
+
+.footerpad {
+    color: #B2B2B2;
+    font-size: 24px;
+    padding: 30px 0 30px 0;
+    font-family: gilroy-regular;
+}
+
+.footerpad span {
+    color: black;
+    font-family: gilroy-bold;
+}
+
+.footerclr {
+    color: blue;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footerclr a {
+    text-decoration: none;
+    font-family: gilroy-regular;
+}
+
+
+
+.footersocial h3 {
+    font-size: 30px;
+    font-family: gilroy-bold;
+}
+
+.footersocial img {
+    padding: 10px;
+}
+
+.copyright {
+    padding: 5px 0 5px 0;
+    text-align: center;
+    color: #B2B2B2;
+    font-family: gilroy-regular;
+    font-size: 20px;
+}
+
+.footercompany {
+    display: flex;
+    justify-content: center;
+}
+
+.footercompany a {
+    padding: 15px;
+}
+
+.applecmp {
+    padding-top: 12px;
+}
+
+
+/* -----------Responsive -----------*/
+
+
+@media (max-width:1366px) {
+
+    .popularstep h1 {
+        color: white;
+        text-align: center;
+        font-size: 55px;
+        font-family: bebasneueregular;
+        padding: 60px 0 50px 0;
+    }
+
+    .popularsteps h2 {
+        color: white;
+        font-size: 40px;
+        font-family: bebasneueregular;
+    }
+
+    .popularsteps p {
+        font-family: gilroy-regular;
+        font-size: 25px;
+        color: white;
+        margin-right: 100px;
+        border-bottom: #FBDE25 5px solid;
+    }
+
+    .mainform button a {
+        text-decoration: none;
+        font-size: 24px;
+        font-family: gilroy-bold;
+        color: white;
+    }
+
+    .footer {
+        padding: 40px 100px 100px 100px;
+    }
+
+    .footer h4 {
+        font-family: gilroy-bold;
+        font-size: 25px;
+    }
+
+    .footer ul li {
+        font-size: 20px;
+        color: #B2B2B2;
+        padding: 7px 0 7px 0;
+    }
+
+    .footerpad {
+        color: #B2B2B2;
+        font-size: 20px;
+        padding: 0px 0 56px 0;
+        font-family: gilroy-regular;
+    }
+
+    .footerclr {
+        color: blue;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .footersocial h3 {
+        font-size: 24px;
+        font-family: gilroy-bold;
+    }
+
+
+
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .headertxt h1 {
+        color: white;
+        font-family: bebas;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .headertxt p {
+        color: #00ADEF;
+        font-family: gilroy-regular;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .colsec1 p {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: gilroy-bold;
+        padding-top: 73.5px;
+        padding-bottom: 73.5;
+        text-transform: uppercase;
+    }
+
+    .colsec2 p {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: gilroy-bold;
+        padding-top: 73.5px;
+        padding-bottom: 73.5;
+        text-transform: uppercase;
+    }
+
+    .colsec3 p {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: gilroy-bold;
+        padding-top: 73.5px;
+        padding-bottom: 73.5;
+        text-transform: uppercase;
+    }
+
+    .brands {
+        height: 450px;
+    }
+
+    .brands h1 {
+        font-size: 50px;
+        font-family: bebas;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .brands p {
+        font-size: 23px;
+        font-family: gilroy-medium;
+        color: #8E8D8D;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+
+    .brands button a {
+        font-size: 21px;
+        font-family: gilroy-medium;
+        text-align: center;
+        border-radius: 35px;
+        padding: 3px 20px;
+        background-color: #004B87;
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+        display: block;
+    }
+
+    .populartxt h1 {
+        font-size: 46px;
+        font-family: bebas;
+        color: white;
+        padding-bottom: 10px;
+    }
+
+    .populartxt p {
+        font-size: 16px;
+        font-family: gilroy-regular;
+        color: white;
+        padding-bottom: 20px;
+    }
+
+    .populartxt a {
+        font-size: 20px;
+        font-family: gilroy-regular;
+        text-align: center;
+        border-radius: 35px;
+        padding: 3px 40px;
+        border: white 2px solid;
+        text-decoration: none;
+        color: white;
+    }
+
+    .lens2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    .lens2 p {
+        font-family: bebasneue;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .lensdetails h5 {
+        font-family: gilroy-bold;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        padding-top: 120px;
+    }
+
+    .lensdetails p {
+        font-family: gilroy-regular;
+        font-size: 25px;
+        text-align: center;
+        color: white;
+    }
+
+    .lensbtn button a {
+        font-size: 20px;
+        font-family: gilroy-regular;
+        text-align: center;
+        border-radius: 7px;
+        padding: 0px 150px;
+        background-color: #F2C64C;
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+        display: block;
+    }
+
+    .lensbtn {
+        display: flex;
+        margin: -50px;
+        justify-content: center;
+    }
+
+    .journey1 h2 {
+        font-family: bebasneueregular;
+        font-size: 35px;
+        color: white;
+    }
+
+    .journey2 ul li {
+        font-family: gilroy-regular;
+        font-size: 20px;
+        color: white;
+    }
+
+    img,
+    svg {
+        padding-right: 80px;
+        vertical-align: middle;
+    }
+
+    .companydetails p {
+        font-style: gilroy-regular;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .companybtn button a {
+        font-size: 20px;
+        font-family: gilroy-regular;
+        text-align: center;
+        border-radius: 7px;
+        padding: 0px 150px;
+        background-color: #F2C64C;
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+        display: block;
+    }
+
+    .companybtn {
+        display: flex;
+        margin: -50px;
+        justify-content: center;
+    }
+
+    .popularstep h1 {
+        color: white;
+        text-align: center;
+        font-size: 45px;
+        font-family: bebasneueregular;
+        padding: 90px 0 70px 0;
+    }
+
+    .popularsteps h2 {
+        color: white;
+        font-size: 30px;
+        font-family: bebasneueregular;
+    }
+
+    .popularsteps p {
+        font-family: gilroy-regular;
+        font-size: 21px;
+        color: white;
+        margin-right: 75px;
+        border-bottom: #FBDE25 5px solid;
+    }
+
+    .popularstepbtn button a {
+        font-size: 20px;
+        font-family: gilroy-regular;
+        text-align: center;
+        border-radius: 7px;
+        padding: 0px 150px;
+        background: none;
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+        display: block;
+    }
+
+    .iconSize2 {
+        display: flex;
+        font-size: 6vw;
+        padding-top: 30px;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .lensdetails h5 {
+        font-family: gilroy-bold;
+        font-size: 24px;
+        text-align: center;
+        color: white;
+        padding-top: 30px;
+    }
+
+    .lensdetails p {
+        font-family: gilroy-regular;
+        font-size: 17px;
+        text-align: center;
+        color: white;
+    }
+
+
+
+
+
+    .popularstep {
+        background: url(img/popularstep.png) no-repeat fixed;
+        height: 700px;
+    }
+
+    .dreampassion h1 {
+        font-size: 40px;
+        font-family: BebasNeueBold;
+    }
+
+    .dreampassion h3 {
+        font-size: 30px;
+        font-family: gilroy-regular;
+        color: #FBDE25;
+    }
+
+    .dreampassion p {
+        font-size: 23px;
+        font-family: gilroy-regular;
+    }
+
+    .dreampassion {
+        padding: 70px 0;
+    }
+
+    .formarea h1 {
+        font-size: 40px;
+        font-family: gilroy-medium;
+    }
+
+    .formarea h4 {
+        font-size: 28px;
+        font-family: gilroy-medium;
+        color: #FBDE25;
+    }
+
+    .formarea label {
+        font-size: 20px;
+        font-family: gilroy-medium;
+        padding: 10px 0 10px 4px;
+    }
+
+    .formarea input {
+        font-size: 20px;
+        width: 100%;
+        padding-left: 10px;
+        height: 40px;
+        border: #8E8D8D 3px solid;
+        border-radius: 8px;
+    }
+
+    .mainform button a {
+        text-decoration: none;
+        font-size: 20px;
+        font-family: gilroy-bold;
+        color: white;
+    }
+
+    .mainform button {
+        padding: 5px;
+        margin-top: 25px;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+        background: #FBDE25;
+    }
+
+    .formrules ul li {
+        font-size: 15px;
+        font-family: gilroy-medium;
+        padding: 10px 0 10px 4px;
+    }
+
+    .formrules p {
+        font-size: 15px;
+        font-family: gilroy-medium;
+        padding: 10px 0 10px 4px;
+    }
+
+    .formarea h4 {
+        font-size: 22px;
+        font-family: gilroy-medium;
+        color: #FBDE25;
+    }
+
+    .deliveryicon p {
+        font-size: 16px;
+        font-family: gilroy-bold;
+        color: #01ABEC;
+        padding-top: -2px;
+    }
+
+    .delivery h5 {
+        font-size: 14px;
+        color: #B2B2B2;
+        font-family: gilroy-regular;
+    }
+
+    .footer h4 {
+        font-family: gilroy-bold;
+        font-size: 18px;
+    }
+
+    .footer ul li {
+        font-size: 15px;
+        color: #B2B2B2;
+        padding: 7px 0 7px 0;
+    }
+
+    .footerpad {
+        color: #B2B2B2;
+        font-size: 15px;
+        padding: 13px 0 30px 0;
+        font-family: gilroy-regular;
+    }
+
+    .footerclr {
+        color: blue;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .footersocial h3 {
+        font-size: 19px;
+        font-family: gilroy-bold;
+    }
+
+    .footersocial img {
+        padding: 5px;
+        height: 32px;
+        margin-top: 20px;
+    }
+
+    .copyright {
+        padding: 5px 0 5px 0;
+        text-align: center;
+        color: #B2B2B2;
+        font-family: gilroy-regular;
+        font-size: 15px;
+    }
+
+    img,
+    svg {
+        padding-right: 30px;
+        vertical-align: middle;
+    }
+
+    .active a {
+        color: #00ADEF;
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 15px 100px 40px 100px;
+    }
+
+}
+
+@media (max-width:991px) {
+
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    /* html {
+        margin-right: -50px;
+    } */
+
+    .headertxt {
+        padding-top: 120px;
+    }
+
+    .headertxt h1 {
+        color: white;
+        font-family: bebas;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .headertxt p {
+        color: #00ADEF;
+        font-family: gilroy-regular;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .header {
+        background: url(img/heroback.png) no-repeat fixed;
+        height: 500px;
+    }
+
+    .iconSize {
+        display: flex;
+        font-size: 5vw;
+        padding-top: 22px;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .colsec1 p {
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        font-family: gilroy-bold;
+        padding-top: 30px;
+        padding-bottom: 73.5;
+        text-transform: uppercase;
+    }
+
+    .colsec2 p {
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        font-family: gilroy-bold;
+        padding-top: 30px;
+        padding-bottom: 73.5;
+        text-transform: uppercase;
+    }
+
+    .colsec3 p {
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        font-family: gilroy-bold;
+        padding-top: 30px;
+        padding-bottom: 73.5;
+        text-transform: uppercase;
+    }
+
+    .brands h1 {
+        font-size: 40px;
+        font-family: bebas;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .brands p {
+        font-size: 19px;
+        font-family: gilroy-medium;
+        color: #8E8D8D;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+
+    .brands button a {
+        font-size: 15px;
+        font-family: gilroy-medium;
+        text-align: center;
+        border-radius: 35px;
+        padding: 3px 20px;
+        background-color: #004B87;
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+        display: block;
+    }
+
+    .brands {
+        height: 380px;
+    }
+
+    .populargirl {
+        padding: 75px 0 0 150px;
+    }
+
+    .populargirl img {
+        padding-right: 2px;
+        vertical-align: middle;
+        padding-top: 60px;
+        height: 238px;
+    }
+
+    .populartxt h1 {
+        font-size: 30px;
+        font-family: bebas;
+        color: white;
+        padding-bottom: 10px;
+    }
+
+    .populartxt p {
+        font-size: 13px;
+        font-family: gilroy-regular;
+        color: white;
+        padding-bottom: 20px;
+    }
+
+    .populartxt a {
+        font-size: 14px;
+        font-family: gilroy-regular;
+        text-align: center;
+        border-radius: 35px;
+        padding: 3px 40px;
+        border: white 2px solid;
+        text-decoration: none;
+        color: white;
+    }
+
+    .lens2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .lens2 p {
+        font-family: bebasneue;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .iconSize2 {
+        display: flex;
+        font-size: 7vw;
+        padding-top: 40px;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .companybtn {
+        margin-top: -50px;
+        margin-bottom: -50px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .lensdetails h5 {
+        font-family: gilroy-bold;
+        font-size: 18px;
+        text-align: center;
+        color: white;
+        padding-top: 20px;
+    }
+
+    .lensdetails p {
+        font-family: gilroy-regular;
+        font-size: 12px;
+        text-align: center;
+        color: white;
+    }
+
+    .lensdetails {
+        height: 365px;
+    }
+
+    .lensbtn button a {
+        font-size: 15px;
+        font-family: gilroy-regular;
+        text-align: center;
+        border-radius: 7px;
+        padding: 0px 150px;
+        background-color: #F2C64C;
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+        display: block;
+    }
+
+    .journey1 h2 {
+        font-family: bebasneueregular;
+        font-size: 25px;
+        color: white;
+    }
+
+    .journey2 ul li {
+        font-family: gilroy-regular;
+        font-size: 15px;
+        color: white;
+    }
+
+    .journeyarea {
+        background: url(img/journeyarea.png) no-repeat;
+        height: 340px;
+    }
+
+    .logoarea img {
+        padding-right: 80px;
+        vertical-align: middle;
+        height: 60px;
+        padding: 0 40px 0 40px;
+    }
+
+    .companydetails p {
+        font-family: gilroy-regular;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .companybtn button a {
+        font-size: 15px;
+        font-family: gilroy-regular;
+        text-align: center;
+        border-radius: 7px;
+        padding: 0px 110px;
+        background-color: #F2C64C;
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+        display: block;
+    }
+
+
+    .popularstep h1 {
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        font-family: bebasneueregular;
+        padding: 74px 0 55px 0;
+    }
+
+    .popularsteps h2 {
+        color: white;
+        font-size: 28px;
+        font-family: bebasneueregular;
+    }
+
+    .popularsteps p {
+        font-family: gilroy-regular;
+        font-size: 14px;
+        color: white;
+        margin-right: 70px;
+        border-bottom: #FBDE25 5px solid;
+    }
+
+    .popularstepbtn button a {
+        font-size: 14px;
+        font-family: gilroy-regular;
+        text-align: center;
+        border-radius: 7px;
+        padding: 0px 150px;
+        background: none;
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+        display: block;
+    }
+
+    .popularstep {
+        background: url(img/popularstep.png) no-repeat fixed;
+        height: 548px;
+    }
+
+    .dreampassion h1 {
+        font-size: 30px;
+        font-family: BebasNeueBold;
+    }
+
+    .dreampassion h3 {
+        font-size: 24px;
+        font-family: gilroy-regular;
+        color: #FBDE25;
+    }
+
+    .dreampassion p {
+        font-size: 18px;
+        font-family: gilroy-regular;
+    }
+
+
+    .formarea h1 {
+        font-size: 23px;
+        font-family: gilroy-medium;
+    }
+
+    .formarea h4 {
+        font-size: 17px;
+        font-family: gilroy-medium;
+        color: #FBDE25;
+    }
+
+    .formarea label {
+        font-size: 14px;
+        font-family: gilroy-medium;
+        padding: 10px 0 10px 4px;
+    }
+
+    .formarea input {
+        font-size: 17px;
+        width: 100%;
+        padding-left: 10px;
+        height: 29px;
+        border: #8E8D8D 1px solid;
+        border-radius: 8px;
+    }
+
+    .mainform button a {
+        text-decoration: none;
+        font-size: 13px;
+        font-family: gilroy-bold;
+        color: white;
+    }
+
+    .formrules ul li {
+        font-size: 12px;
+        font-family: gilroy-medium;
+        padding: 10px 0 10px 4px;
+    }
+
+    .formrules p {
+        font-size: 12px;
+        font-family: gilroy-medium;
+        padding: 10px 0 10px 4px;
+    }
+
+    .formarea h4 {
+        font-size: 16px;
+        font-family: gilroy-medium;
+        color: #FBDE25;
+    }
+
+    .deliveryicon p {
+        font-size: 14px;
+        font-family: gilroy-bold;
+        color: #01ABEC;
+        padding-top: -2px;
+    }
+
+    .delivery h5 {
+        font-size: 10px;
+        color: #B2B2B2;
+        font-family: gilroy-regular;
+    }
+
+    .delivery {
+        padding-bottom: 30px;
+    }
+
+    .footer h4 {
+        font-family: gilroy-bold;
+        font-size: 13px;
+    }
+
+    .footer ul li {
+        font-size: 10px;
+        color: #B2B2B2;
+        padding: 7px 0 7px 0;
+    }
+
+    .footerpad {
+        color: #B2B2B2;
+        font-size: 10px;
+        padding: 0px 0 28px 0;
+        font-family: gilroy-regular;
+    }
+
+    .footerclr {
+        color: blue;
+        font-size: 10px;
+        text-decoration: none;
+    }
+
+    .footersocial h3 {
+        font-size: 13px;
+        font-family: gilroy-bold;
+    }
+
+    .footersocial img {
+        padding: 5px;
+        height: 28px;
+    }
+
+    .copyright {
+        padding: 5px 0 5px 0;
+        text-align: center;
+        color: #B2B2B2;
+        font-family: gilroy-regular;
+        font-size: 10px;
+    }
+
+    .footercompany img {
+        padding-right: 10px;
+        vertical-align: middle;
+    }
+
+
+
+
+}
+
+
+@media (max-width:768px) {}
+
+
+
+@media (max-width:576px) {
+
+
+    .navbar img {
+        height: 80px;
+        width: 143px;
+        margin-top: 2px;
+        margin-left: -18px;
+    }
+
+    .popularstepbtn button {
+        display: block;
+        border-radius: 7px;
+        margin: 80px 0 100px 0;
+        background: none;
+        border: none;
+        border: #707070 1px solid;
+    }
+
+    a.arby.nr31w {
+        margin-top: -10px;
+        font-size: 38px;
+    }
+
+    .active2:hover {
+        background-color: #F6881F;
+    }
+
+    .signin:hover {
+        color: white;
+    }
+
+
+    .navbar ul li {
+        font-size: 5px;
+        font-family: bebas;
+        color: black;
+    }
+
+    .headertxt h1 {
+        color: white;
+        font-family: bebas;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .headertxt {
+        padding-top: 45px;
+    }
+
+    .lensbtn button a {
+        font-size: 20px;
+        font-family: gilroy-regular;
+        text-align: center;
+        border-radius: 7px;
+        padding: 4px 120px;
+        background-color: #F2C64C;
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+        display: block;
+    }
+
+    .journeyarea {
+        background: url(img/journeyarea.png) no-repeat;
+        height: 340px;
+        margin-top: 14px;
+    }
+
+    .headertxt p {
+        color: #00ADEF;
+        font-family: gilroy-regular;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .header {
+        background: url(img/heroback.png) round;
+        height: 350px;
+        width: 100%;
+    }
+
+    a.englan {
+        padding: 10px 8px 8px 8px;
+    }
+
+    a.arby {
+        padding: 8px;
+    }
+
+    li.active {
+        padding-top: 4px;
+    }
+
+    li.active {
+        display: none;
+    }
+
+    .navbar {
+        padding: 20px 25px;
+    }
+
+    .navbar img {
+        padding-right: 10px;
+        vertical-align: middle;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        margin-right: -20px;
+    }
+
+    .active {
+        background-color: white;
+        padding: 2px;
+        border-radius: 10px;
+    }
+
+    .active a {
+        color: #00ADEF;
+        font-size: 12px;
+    }
+
+
+    .active2 {
+        background-color: white;
+        padding: 5px 14px 5px 15px;
+        border-radius: 10px;
+        font-size: 13px;
+        font-family: bebas;
+        color: #00ADEF;
+        text-align: center;
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        margin: 5px 95px 5px 95px;
+    }
+
+    li.active {
+        padding-top: 7px;
+    }
+
+    .nav2 a {
+        color: white;
+        font-size: 24px;
+    }
+
+    .nav2 b {
+        color: white;
+        padding: 0 2px 0 2px;
+    }
+
+    .navbar ul li b {
+        font-size: 18px;
+    }
+
+
+    .arby {
+        color: white;
+        font-size: 26px;
+    }
+
+
+    .colsec {
+        height: 125px;
+    }
+
+    .iconSize {
+        display: flex;
+        font-size: 10vw;
+        padding-top: 20px;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .colsec1 p {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: gilroy-bold;
+        padding-top: 20px;
+        padding-bottom: 73.5;
+        text-transform: uppercase;
+    }
+
+    .colsec2 p {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: gilroy-bold;
+        padding-top: 20px;
+        padding-bottom: 73.5;
+        text-transform: uppercase;
+    }
+
+
+    .colsec3 p {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: gilroy-bold;
+        padding-top: 20px;
+        padding-bottom: 73.5;
+        text-transform: uppercase;
+    }
+
+
+
+
+
+
+
+    .container.populars {
+        display: inline;
+    }
+
+    .populartxt {
+        padding: 25px 0 0 60px;
+    }
+
+    .populargirl {
+        padding: 20px 0 0 114px;
+    }
+
+
+
+    .populargirl img {
+        padding-right: 2px;
+        vertical-align: middle;
+        padding-top: 0;
+        height: 160px;
+    }
+
+    .logoarea ul {
+        list-style: none;
+        display: inline;
+        justify-content: space-evenly;
+    }
+
+    .brands h1 {
+        font-size: 34px;
+        font-family: bebas;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .brands p {
+        font-size: 15px;
+        font-family: gilroy-medium;
+        color: #8E8D8D;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+
+    .brands button a {
+        font-size: 13px;
+        font-family: gilroy-medium;
+        text-align: center;
+        border-radius: 35px;
+        padding: 3px 20px;
+        background-color: #004B87;
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+        display: block;
+    }
+
+    .brands {
+        height: 317px;
+    }
+
+    .populartxt h1 {
+        font-size: 26px;
+        font-family: bebas;
+        color: white;
+        padding-bottom: 10px;
+    }
+
+    .lensdetails {
+        height: 400px;
+    }
+
+    .iconSize2 {
+        display: flex;
+        font-size: 15vw;
+        padding-top: 48px;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .lensdetails h5 {
+        font-family: gilroy-bold;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        padding-top: 18px;
+    }
+
+    .lensdetails p {
+        font-family: gilroy-regular;
+        font-size: 13px;
+        text-align: center;
+        color: white;
+    }
+
+    .lensbtn {
+        display: flex;
+        height: 120px;
+        margin-top: -60px;
+        justify-content: center;
+    }
+
+    .popularstep {
+        background: url(img/popularstep.png) round;
+        height: auto;
+        margin-top: 22px;
+        width: auto;
+    }
+
+
+    .companybtn button a {
+        font-size: 15px;
+        font-family: gilroy-regular;
+        text-align: center;
+        border-radius: 7px;
+        padding: 0px 50px;
+        background-color: #F2C64C;
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+        display: block;
+    }
+
+
+
+
+
+
+    .lens2 p {
+        font-family: bebasneue;
+        font-size: 19px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 6px;
+    }
+
+    .lens2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .journey1 h2 {
+        font-family: bebasneueregular;
+        font-size: 20px;
+        color: white;
+    }
+
+    .journey1 h2 br {
+        display: none;
+    }
+
+    .journeyhead1 {
+        padding-top: 30px;
+    }
+
+    .journeyhead2 {
+        padding-top: 10px;
+    }
+
+    .journey2 ul li {
+        font-family: gilroy-regular;
+        font-size: 13px;
+        color: white;
+    }
+
+    .journeylist1 {
+        padding-top: 53px;
+    }
+
+    .logoarea {
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .logoarea li {
+        margin: 30px;
+    }
+
+    .companytxt {
+        flex-direction: column;
+    }
+
+    .comp_brand {
+        width: 100%;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-bottom: 25px;
+
+    }
+
+    .comp_brand img {
+        padding-left: 30px;
+    }
+
+    .companybtn {
+        margin: 0px;
+    }
+
+    .companybtn button {
+        margin: 0;
+    }
+
+    .populartxt {
+        text-align: center;
+        padding: 0;
+    }
+
+    .populargirl {
+        margin-top: 50px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .formrules ul {
+        padding: 0;
+    }
+
+    .companyborder {
+        border: none;
+    }
+
+    .popularstep h1 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        font-family: bebasneueregular;
+        padding: 41px 0 30px 0;
+    }
+
+    .popularstepbtn {
+        display: flex;
+        margin-top: -50px;
+        justify-content: center;
+    }
+
+    .popularsteps h2 {
+        color: white;
+        font-size: 22px;
+        font-family: bebasneueregular;
+    }
+
+    .popularsteps p {
+        font-family: gilroy-regular;
+        font-size: 12px;
+        color: white;
+        margin-right: 70px;
+        border-bottom: #FBDE25 5px solid;
+    }
+
+    .popularstepbtn button a {
+        font-size: 14px;
+        font-family: gilroy-regular;
+        text-align: center;
+        border-radius: 7px;
+        padding: 0px 126px;
+        background: none;
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+        display: block;
+    }
+
+    .popularsteps p br {
+        display: none;
+    }
+
+    .dreampassion {
+        padding: 40px 0 40px 10px;
+    }
+
+    .dreampassion h1 {
+        font-size: 25px;
+        font-family: BebasNeueBold;
+    }
+
+    .dreampassion h3 {
+        font-size: 20px;
+        font-family: gilroy-regular;
+        color: #FBDE25;
+    }
+
+    .dreampassion p {
+        font-size: 15px;
+        font-family: gilroy-regular;
+    }
+
+    .dreampassion {
+        padding: 40px 10px;
+    }
+
+    .formarea {
+        padding-top: 0px;
+    }
+
+    .mainform button {
+        padding: 6px;
+        margin-top: 25px;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+        background: #FBDE25;
+    }
+
+    .formrules ul li {
+        font-size: 14px;
+        font-family: gilroy-medium;
+        padding: 4px 10px 10px 4px;
+    }
+
+    .formrules p {
+        font-size: 14px;
+        font-family: gilroy-medium;
+        padding: 10px 0 10px 4px;
+    }
+
+    .mainform {
+        padding-right: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-right: black 2px solid;
+    }
+
+    .formrules {
+        padding: 0px 0 0px 20px;
+    }
+
+    .deliveryicon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -10px;
+    }
+
+    .deliveryicon p {
+        font-size: 16px;
+        font-family: gilroy-bold;
+        color: #01ABEC;
+        padding-top: -2px;
+    }
+
+    .delivery h5 {
+        font-size: 12px;
+        text-align: center;
+        color: #B2B2B2;
+        font-family: gilroy-regular;
+    }
+
+
+
+    .footercompany a {
+        padding: 3px;
+    }
+
+    .footer {
+        padding: 15px 40px 40px 40px;
+    }
+
+    .footer h4 {
+        font-family: gilroy-bold;
+        font-size: 14px;
+    }
+
+    .footer ul li {
+        font-size: 11px;
+        color: #B2B2B2;
+        padding: 7px 0 7px 0;
+    }
+
+    .footerpad {
+        color: #B2B2B2;
+        font-size: 10px;
+        padding: 0px 0 0px 0;
+        font-family: gilroy-regular;
+    }
+
+    .footercompany img {
+        padding-right: 0px;
+        vertical-align: middle;
+        width: auto;
+        height: 33px;
+    }
+
+    .applecmp {
+        padding: 5px;
+    }
+
+
+
+
+
+}
